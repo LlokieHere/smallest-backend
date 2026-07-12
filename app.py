@@ -10,5 +10,9 @@ def home():
 def health():
     return jsonify({"status": "ok"})
 
+@app.route("/about")
+def about():
+    return jsonify({"status": "ok"})
+
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
